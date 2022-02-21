@@ -143,7 +143,7 @@ snippet vunit_tb
 	context vunit_lib.vunit_context;
 	
 	entity tb_${1:NAME} is
-		generic (unner_cfg: string := runner_cfg_default);
+		generic (runner_cfg: string := runner_cfg_default);
 	end entity;
 	
 	architecture tb of tb_${1:NAME} is
