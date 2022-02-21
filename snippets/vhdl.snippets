@@ -39,24 +39,24 @@ snippet arc
 	end $1;
 
 ## Declarations
-# std_logic
+# std_ulogic
 snippet st
-	signal ${1} : std_logic;
-# std_logic_vector
+	signal ${1} : std_ulogic;
+# std_ulogic_vector
 snippet sv
-	signal ${1} : std_logic_vector (${2} downto 0);
-# std_logic in
+	signal ${1} : std_ulogic_vector (${2} downto 0);
+# std_ulogic in
 snippet ist
-	${1} : in std_logic;
-# std_logic_vector in
+	${1} : in std_ulogic;
+# std_ulogic_vector in
 snippet isv
-	${1} : in std_logic_vector (${2} downto 0);
-# std_logic out
+	${1} : in std_ulogic_vector (${2} downto 0);
+# std_ulogic out
 snippet ost
-	${1} : out std_logic;
-# std_logic_vector out
+	${1} : out std_ulogic;
+# std_ulogic_vector out
 snippet osv
-	${1} : out std_logic_vector (${2} downto 0);
+	${1} : out std_ulogic_vector (${2} downto 0);
 # unsigned
 snippet un
 	signal ${1} : unsigned (${2} downto 0);
