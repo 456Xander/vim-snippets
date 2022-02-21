@@ -146,11 +146,12 @@ snippet vunit_tb
 		generic (unner_cfg: string := runner_cfg_default);
 	end entity;
 	
-	architecture tb of ${1:NAME} is
+	architecture tb of tb_${1:NAME} is
 	begin
 		test_runner: process
 		begin
-		test_runner_setup(runner, runner_cfg);
-		
-		test_runner_cleanup(runner);
+			test_runner_setup(runner, runner_cfg);
+				${0}
+			test_runner_cleanup(runner);
+		end process;
 	end architecture;
